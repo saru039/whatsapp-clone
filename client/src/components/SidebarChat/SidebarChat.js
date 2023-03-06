@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./SidebarChat.css";
 import { Avatar } from "@mui/material";
 import { Link } from "react-router-dom";
-import axios from "../../axios";
+import axios from "axios";
 
 const SidebarChat = ({ addNewChat, id, name }) => {
   const [seed, setSeed] = useState("");

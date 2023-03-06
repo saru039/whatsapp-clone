@@ -10,7 +10,7 @@ import { IconButton, Avatar } from "@mui/material";
 import SidebarChat from "../SidebarChat/SidebarChat";
 import { useStateValue } from "../ContextApi/StateProvider";
 import Pusher from "pusher-js";
-import axios from "../../axios";
+import axios from "axios";
 
 const Sidebar = () => {
   const [rooms, setRooms] = useState([]);
@@ -23,7 +23,7 @@ const Sidebar = () => {
   }, []);
 
   useEffect(() => {
-    const pusher = new Pusher("6fbb654a0e0b670de165", {
+    const pusher = new Pusher("6d42f7cb470a3cffed16", {
       cluster: "ap2",
     });
 
